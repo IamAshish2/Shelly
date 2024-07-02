@@ -1,0 +1,38 @@
+# Nmap 7.94SVN scan initiated Mon Jun 17 23:27:23 2024 as: nmap -sV -vv -oN Desktop/searchfilessh 192.168.1.5
+Nmap scan report for 192.168.1.5
+Host is up, received syn-ack (0.00055s latency).
+Scanned at 2024-06-17 23:27:23 +0545 for 64s
+Not shown: 977 closed tcp ports (conn-refused)
+PORT     STATE SERVICE     REASON  VERSION
+21/tcp   open  ftp         syn-ack vsftpd 2.3.4
+22/tcp   open  ssh         syn-ack OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+23/tcp   open  telnet      syn-ack Linux telnetd
+25/tcp   open  smtp        syn-ack Postfix smtpd
+53/tcp   open  domain      syn-ack ISC BIND 9.4.2
+80/tcp   open  http        syn-ack Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+111/tcp  open  rpcbind     syn-ack 2 (RPC #100000)
+139/tcp  open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+512/tcp  open  exec?       syn-ack
+513/tcp  open  login       syn-ack OpenBSD or Solaris rlogind
+514/tcp  open  shell?      syn-ack
+1099/tcp open  java-rmi    syn-ack GNU Classpath grmiregistry
+1524/tcp open  bindshell   syn-ack Metasploitable root shell
+2049/tcp open  nfs         syn-ack 2-4 (RPC #100003)
+2121/tcp open  ftp         syn-ack ProFTPD 1.3.1
+3306/tcp open  mysql       syn-ack MySQL 5.0.51a-3ubuntu5
+5432/tcp open  postgresql  syn-ack PostgreSQL DB 8.3.0 - 8.3.7
+5900/tcp open  vnc         syn-ack VNC (protocol 3.3)
+6000/tcp open  X11         syn-ack (access denied)
+6667/tcp open  irc         syn-ack UnrealIRCd
+8009/tcp open  ajp13       syn-ack Apache Jserv (Protocol v1.3)
+8180/tcp open  http        syn-ack Apache Tomcat/Coyote JSP engine 1.1
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port514-TCP:V=7.94SVN%I=7%D=6/17%Time=6670757F%P=x86_64-pc-linux-gnu%r(
+SF:NULL,2D,"\x01Couldn't\x20get\x20address\x20for\x20your\x20host\x20\(ubu
+SF:ntu\)\n");
+Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 17 23:28:27 2024 -- 1 IP address (1 host up) scanned in 64.12 seconds
